@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LuasVol">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Luas dan Volume"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="40dp" />
+
+    <EditText
+        android:id="@+id/lengthInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan panjang"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="50dp"
+        android:background="#2DA682E7"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/widthInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lengthInput"
+        android:layout_marginTop="16dp"
+        android:background="#2DA682E7"
+        android:hint="Masukkan lebar"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/heightInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan tinggi"
+        android:layout_below="@id/widthInput"
+        android:layout_marginTop="16dp"
+        android:background="#2DA682E7"
+        android:minHeight="48dp"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "Hitung"
+        android:textSize="20dp"
+        android:layout_below="@id/heightInput"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/surfaceAreaResult"
+        android:layout_width="362dp"
+        android:layout_height="58dp"
+        android:layout_below="@id/calculateButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="49dp"
+        android:background="#79A682E7"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/volumeResult"
+        android:layout_width="364dp"
+        android:layout_height="62dp"
+        android:layout_below="@id/surfaceAreaResult"
+        android:layout_marginTop="10dp"
+        android:background="#79A682E7"
+        android:minHeight="48dp" />
+
+</RelativeLayout>

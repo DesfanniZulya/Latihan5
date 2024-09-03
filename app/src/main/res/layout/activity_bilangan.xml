@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Belanja">
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Ganjil / Genap"
+      android:gravity="center"
+      android:textStyle="bold"
+      android:textSize="40dp" />
+
+  <EditText
+      android:id="@+id/bil"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="55dp"
+      android:hint="Masukkan bilangan"
+      android:inputType="numberDecimal"
+      android:minHeight="48dp" />
+
+  <Button
+      android:id="@+id/btn_cek"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/bil"
+      android:layout_marginTop="18dp"
+      android:text="Cek"
+      android:textSize="20dp"/>
+
+  <TextView
+      android:id="@+id/Result"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/btn_cek"
+      android:layout_marginTop="16dp"
+      android:height="45dp"
+      android:background="#95B7A2DC"/>
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menghitung Suhu"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="40dp" />
+
+        <EditText
+            android:id="@+id/input_celsius"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan suhu Celsius" />
+
+        <Button
+            android:id="@+id/btn_konversi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Konversi" />
+
+        <TextView
+            android:id="@+id/input_fahrenheit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6B673AB7"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/input_kelvin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6B673AB7"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/input_reamur"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6B673AB7"
+            android:layout_marginTop="16dp"/>
+
+</LinearLayout>
